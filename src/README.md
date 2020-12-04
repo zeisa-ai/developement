@@ -1,6 +1,7 @@
 States are triggered by the user when items are added to the cart. There is an
 empty shopping cart list as a state and when an item is added to the cart,
 the state is set to be the shopping cart having one (or however many) items.
+States are also triggered when different filters and categories are clicked.
 
 Architeture wise, I set things as defined the GearUp slides:
 App.js - contains the product list and passes it to FilteredList component
@@ -15,4 +16,4 @@ on to be removed is actually the only thing not being removed because of how
 the lists are updated but even why I tried to use a key speicifc to an item to
 fix this issue, the bug is still there. There was a variety of ways I rewrote
 the removeFromCart() method and none of them worked so I left the one that allowed
-some functionality though it's not correct. 
+some functionality though it's not correct.
